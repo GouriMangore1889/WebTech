@@ -24,7 +24,7 @@ console.log(uniqueId === anotherUniqueId); // false (symbols are always unique)
 // Object, Array, Function
 
 // Array (collection of values)
-const arr = ["hello", "hi", "Gouri"];
+const arr = ["hello", "hi", "Gouri",4,6];
 const numbers = [1, 2, 3, 4, 5];
 
 console.log(arr);
