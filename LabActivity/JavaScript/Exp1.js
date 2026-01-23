@@ -1,17 +1,20 @@
 //Activity 1
- 
+ document.write(" activity 1<br>")
+        console.log(" activity 1 ")
    //display student details
-     console.log("Name: Gouri Mangore");
-     console.log("email: mangoregouri@gmail.com");
-     console.log("PRN: 076 ");
+     console.log("Name: Samiksha Mane");
+     console.log("email: manesamiksha@gmail.com");
+     console.log("PRN: 075 ");
 
-     document.write("Name: Gouri Mangore<br>")
-     document.write("email: mangoregouri@gmail.com<br>")
-     document.write("PRN: 076 <br>");
+     document.write("Name: Samiksha Mane<br>")
+     document.write("email: manesamiksha@gmail.com<br>")
+     document.write("PRN: 075<br>");
      
 //activity 2
    //check even odd
-     let n=4
+   document.write(" activity 2<br>")
+        console.log(" activity 2 ")
+     let n=7
      if(n%2==0)
       {  document.write(n+" is even <br>")
         console.log(n+" is even ")
@@ -24,7 +27,9 @@
  
 //activity 3
    // check pass or fail
-     let mark=22
+   document.write(" activity 3<br>")
+        console.log(" activity 3")
+     let mark=34
      let Grade
      if(mark>=90)
         Grade="A+"
@@ -47,6 +52,8 @@
 
 //activity 4
    // display no
+   document.write("<br> activity 4")
+        console.log(" activity 4")
     document.write("<br>1 to 10")
     console.log("1 to 10")
     
