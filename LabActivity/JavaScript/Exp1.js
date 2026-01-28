@@ -2,12 +2,12 @@
  document.write(" activity 1<br>")
         console.log(" activity 1 ")
    //display student details
-     console.log("Name: Samiksha Mane");
-     console.log("email: manesamiksha@gmail.com");
+     console.log("Name: Gouri Mangore");
+     console.log("email: mangoregouri@gmail.com");
      console.log("PRN: 075 ");
 
-     document.write("Name: Samiksha Mane<br>")
-     document.write("email: manesamiksha@gmail.com<br>")
+     document.write("Name:Gouri Mangore<br>")
+     document.write("email: mangoregouri@gmail.com<br>")
      document.write("PRN: 075<br>");
      
 //activity 2
