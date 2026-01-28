@@ -1,5 +1,9 @@
 //activity1
+console.log("Activity 1");
+
 //Array functions and obj declaration with ex 
+console.log("Array functions and obj declaration with ex");
+
        //Array
         //1.
         const arr=[4,5,6,7]
@@ -25,8 +29,12 @@
             console.log(info.name);
             console.log(info.age);
 
- //activity2
+//activity2
+console.log("Activity 2");
+
    //find largest no in string
+   console.log("find largest no in string");
+   
      let str="2945"
      console.log(`Given string str :${str}`)     
      let lar=str[0]
@@ -38,7 +46,11 @@
      console.log(`largest no in string is ${lar}`);
      
  //activity3
+console.log("Activity 3");
+
     //print reverse no in string
+    console.log("print reverse no in string");
+    
      let str2="45678"
      let str3=""
      for(let i=str2.length-1;i>=0;i--){
@@ -47,6 +59,8 @@
      console.log(str3);  
      
     //find vowel in string
+    console.log("find vowel in string");
+    
     let str4 = "Gouri";
     let vowels = "aeiou";
     console.log(`my string:${str4}`);
@@ -58,7 +72,11 @@
     }
 
  //activity4
+console.log("Activity 4");
+
     //check palindrome number
+    console.log("check palindrome number");
+    
     let num="354"
     let reversed=num.split('').reverse().join('')  
              //split('')=converts string to array
@@ -85,7 +103,11 @@
       console.log(`the stringNo:${str5} is not Palindrome`); 
      
  //activity5
+console.log("Activity 5");
+
     //fibbonaaci number
+    console.log("fibbonaaci number");
+    
     let a=0,b=1
       for( i=0 ;i<10;i++)
       {
@@ -95,7 +117,11 @@
 
  
  //activity6
+console.log("Activity 6");
+
     //find largest ele in array
+    console.log("find largest ele in array");
+    
      let arr2=[7,8,5,3,2,9,1]
      let large=arr2[0]
      for(let i=0;i<arr2.length;i++)
@@ -106,7 +132,11 @@
      console.log(`the largest element in arr:${arr2} is ${large}`);
      
  //activity7
+console.log("Activity 7");
+
     //remove duplicate ele in array
+    console.log("remove duplicate ele in array");
+    
         let arr3 = [2,5,7,4,3,2,9];
         let unique = [];
         console.log(`before removal of duplicates arr: ${arr3}`);
@@ -120,7 +150,11 @@
        
        
  //activity8
+console.log("Activity 8");
+
     //find missing number in array
+    console.log("find missing number in array");
+    
          let arr4=[1,3,4]
          let total=0
          for (let i = 1; i <=arr4.length+1; i++){
@@ -133,7 +167,11 @@
          console.log(`missing element in arr:${arr4} is ${total-sum}`);
          
  //activity9
+console.log("Activity 9");
+
    //function to find even or odd
+   console.log("function to find even or odd");
+   
     function isEvenOdd(n){
        if( n%2==0)
         return "even"
@@ -145,6 +183,8 @@
     
     
     //function to find sum of array ele
+    console.log("function to find sum of array ele");
+    
      function sumOfArray(arr){
         let sum=0
         for(e of arr){
