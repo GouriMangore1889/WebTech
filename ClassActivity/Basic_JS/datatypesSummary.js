@@ -72,3 +72,38 @@ console.log(gameCount.toUpperCase());
 console.log(gameCount.toLowerCase()); 
 console.log(gameCount.charAt(2));     
 console.log(gameCount.indexOf('G'));  
+
+//memory (stack,Heap)
+  //stack==>used for primitive datatypes
+  //heap==>
+
+let mytubeName='GHM'
+let newmytubeName=mytubeName
+console.log(mytubeName)
+console.log(newmytubeName);
+newmytubeName='Gouri'
+console.log(newmytubeName);
+
+// Stack memory
+// Used for primitive data types (number, string, boolean, null, undefined)
+// Copy of value is passed
+
+// Heap memory
+// Used for non-primitive data types (object, array, function)
+// Reference is passed, not a copy
+
+
+let user1={
+    fname:"Gouri",
+    age:20,
+    id:7
+}
+let user2=user1   //make copy of user1
+
+user2.id=29
+console.log(user1.id);
+console.log(user2.id);  //objects are stored in heap memory,when we assign one obj to another variable reference is copy not a value
+   //if we change one then both variables changes
+
+
+
