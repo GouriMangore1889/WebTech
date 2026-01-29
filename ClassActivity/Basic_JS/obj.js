@@ -1,5 +1,4 @@
-// SYMBOL must be declared before use 
-const mySymbol = Symbol("key");
+ const mySymbol = Symbol("key");// SYMBOL must be declared before use
 
 // Object literal
 let myObj = {
