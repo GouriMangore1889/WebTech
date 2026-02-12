@@ -27,3 +27,8 @@ document.querySelectorAll('li')
   //means changing html by using js
   //ex.=>show error msg,display success msg,clear input feilds and change color to the red
    
+  
+  //js makes form smart
+  //form validation
+     //checking user inputs before sending server
+     
