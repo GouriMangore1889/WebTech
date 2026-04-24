@@ -1,0 +1,9 @@
+<h2>Student List</h2>
+
+<ul>
+  @for (s of students; track $index) {
+    <li>
+      {{ s.name }} | {{ s.age }} | {{ s.course }}
+    </li>
+  }
+</ul>

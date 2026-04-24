@@ -1,0 +1,87 @@
+<h3>**1 way Data binding</h3>
+  <p>*interpolation</p>
+{{fname}}
+<br>
+{{myRoll}}
+<br>
+<p>*event binding</p>
+<button (click)="showButton()">Click Me</button>
+<br>
+
+<h3>**2 way binding</h3>
+<input [(ngModel)]="fname" placeholder="enter the name">
+<br>
+<input [(ngModel)]="myRoll" placeholder="enter the rollnumber">
+<br><br>
+<p>*img binding</p>
+<input [(ngModel)]="imgURL" placeholder="Enter image path">
+<br><br>
+<img [src]="imgURL" width="200">
+<br>
+<h3>**Directives</h3>
+<p>*for</p>
+<ul>
+   @for (c of cityArray; track $index){
+      <li>{{c}}</li>
+   }
+</ul>
+
+<p>*if</p>
+<button (click)="show()">Show</button>
+<button (click)="hide()">Hide</button>
+
+<br><br>
+@if (isVisible) {
+  <div [style.backgroundColor]="isVisible ? 'blue' : 'red'" 
+       style="width:200px; height:100px;">
+    Visible Block
+  </div>
+}
+
+<p>*if-else</p>
+<br>
+<button (click)="login()">Login</button>
+<button (click)="logout()">Logout</button>
+
+<br>
+@if (isLoggedIn) {
+  <h4>Welcome, {{ username }} </h4>
+} @else {
+  <h4>Please login first</h4>
+}
+
+<br>
+<p>simply toggle</p>
+<button (click)="toggle()">Toggle</button>
+
+<br><br>
+@if (istrue) {
+  <div style="width:200px; height:100px; background-color:green;">
+    Now Visible
+  </div>
+} @else {
+  <div style="width:200px; height:100px; background-color:gray;">
+    Now Hidden
+  </div>
+}
+<br><br>
+<p></p>
+
+<input type="number" [(ngModel)]="num1" placeholder="Enter first number">
+<input type="number" [(ngModel)]="num2" placeholder="Enter second number">
+
+<br><br>
+
+@if (true) {
+  <div 
+    [style.backgroundColor]="num1 === num2 ? 'yellow' : 'pink'"
+    style="width:200px; height:100px;">
+    
+    @if (num1 === num2) {
+      <p>Equal </p>
+    } @else {
+      <p>Not Equal </p>
+    }
+
+  </div>
+}
