@@ -1,0 +1,59 @@
+/* Container */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Form styling */
+input {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+/* Button */
+button {
+  padding: 8px 15px;
+  margin: 5px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* List */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #f8f9fa;
+  padding: 10px;
+  margin: 8px auto;
+  width: 60%;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Layout center */
+input, button {
+  display: inline-block;
+}
+
+hr {
+  margin: 20px 0;
+}
