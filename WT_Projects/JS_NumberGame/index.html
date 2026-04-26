@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Number Guess Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="nav-left">Number Guess Game</div>
+  <ul class="nav-links">
+    <li><a href="#" onclick="showSection('homePage')">Home</a></li>
+    <li><a href="#" onclick="showSection('gamePage')">Play</a></li>
+    <li><a href="#" onclick="showSection('scoreboard')">Scoreboard</a></li>
+  </ul>
+</nav>
+
+<!-- Home Page -->
+<div class="container" id="homePage">
+  <h1>Number Guess Game</h1>
+  <h3>High Score: <span id="homeScore">0</span></h3>
+  <div class="instructions-box" id="instructions">
+    <h3>Instructions:</h3>
+    <ul>
+      <li>Guess a number between 0-100.</li>
+      <li>1st Round → Score 100 (3 chances), <br> 2nd Round → Score 70 (6 chances), <br>3rd Round → Score 50 (9 chances).</li>
+      <li>Try to guess the number within the attempts.</li>
+    </ul>
+  </div>
+  <button onclick="startHomeGame()">Play Game</button>
+</div>
+
+<!-- Game Page -->
+<div class="container" id="gamePage" style="display:none;">
+  <h2>Guess The Number</h2>
+  <div id="menu">
+    <button onclick="startGame(1)">1 Round</button>
+    <button onclick="startGame(2)">2 Rounds</button>
+    <button onclick="startGame(3)">3 Rounds</button>
+    <button id="restartBtn" onclick="restartGame()">Restart Game</button>
+  </div>
+  <div id="gameArea" style="display:none;">
+    <p id="msg">Guess a number between 0-100</p>
+    <input type="number" id="guessInput">
+    <button id="submitBtn" onclick="checkGuess()">Submit</button>
+    <p id="attempts"></p>
+  </div>
+  <h3>High Score: <span id="gameScore">0</span></h3>
+</div>
+
+<!-- Scoreboard -->
+<div class="container" id="scoreboard" style="display:none;">
+  <h2>Scoreboard</h2>
+  <p>Track your progress and challenge yourself!</p>
+</div>
+
+<div id="popup" class="popup"></div>
+
+<!-- Load JS files -->
+<script src="main.js"></script>
+<script src="play.js"></script>
+</body>
+</html>

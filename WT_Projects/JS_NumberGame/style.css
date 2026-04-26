@@ -1,0 +1,135 @@
+/* Navbar Styling */
+.navbar {
+  width: 100%;
+  background: #4b2c72;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+
+.nav-left {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff69b4;
+}
+
+body {
+  margin: 0;
+  padding-top: 90px; /* space for navbar */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #b39ac0;
+  font-family: Arial;
+}
+
+
+
+.container {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  width: 360px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #8a64ad;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #691eae;
+}
+
+input {
+  padding: 8px;
+  margin: 10px 0;
+  width: 80%;
+}
+
+.popup {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #047a41;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  display: none;
+  font-weight: bold;
+  z-index: 100;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.instructions-box {
+  background: #bfbbca; 
+  padding: 15px 20px;
+  border-radius: 12px;
+  margin: 15px 0;
+  text-align: left;
+}
+
+.instructions-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.instructions-box li {
+  margin-bottom: 8px;  
+}
+
+#submitBtn {
+  background-color: #ff69b4; 
+}
+
+#submitBtn:hover {
+  background-color: #ff85c1; 
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+#restartBtn {
+  background-color: #ff7f50; 
+}
+
+#restartBtn:hover {
+  background-color: #ff9066; 
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
