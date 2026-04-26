@@ -1,0 +1,42 @@
+/* Suggestion card */
+:host {
+  display: block;
+  margin-top: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+h3 {
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Each item */
+li {
+  background: #e3f2fd;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+/* Hover */
+li:hover {
+  background: #90caf9;
+  transform: translateX(5px);
+}
+
+/* Empty text */
+p {
+  color: #888;
+}

@@ -1,0 +1,11 @@
+<h3>Suggestions</h3>
+
+@if (activities.length > 0) {
+  <ul>
+    @for (a of activities; track $index) {
+      <li>{{ a }}</li>
+    }
+  </ul>
+} @else {
+  <p>No activities found</p>
+}

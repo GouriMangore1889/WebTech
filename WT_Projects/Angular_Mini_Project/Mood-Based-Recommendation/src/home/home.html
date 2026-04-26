@@ -1,0 +1,16 @@
+<div class="container">
+
+  <h2>Select Mood</h2>
+
+  <select [(ngModel)]="selectedMood">
+    <option value="">Select</option>
+    <option value="happy">Happy 😊</option>
+    <option value="sad">Sad 😢</option>
+    <option value="bored">Bored 😐</option>
+  </select>
+
+  <button (click)="showActivities()">Show Activities</button>
+
+  <app-suggestions [activities]="activities"></app-suggestions>
+
+</div>
