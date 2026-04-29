@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation using DOM</title>
+    <style>
+                body {
+        display: flex;             /* Activates centering powers */
+        flex-direction: column;    /* Keeps content stacked vertically */
+        align-items: center;       /* Centers horizontally */
+        justify-content: center;   /* Centers vertically */
+        min-height: 100vh;         /* Ensures body takes full screen height */
+        margin: 0;                 /* Removes default browser gaps */
+    
+        }
+        form{
+             border: 2px solid blueviolet; /* Added 'solid' so you can see it */
+        padding: 20px;             /* Changed 'auto' to a real value */
+        }
+
+    </style>
+</head>
+<body >
+
+    <h1>Registration Form</h1>
+
+    <!-- 
+        onsubmit:
+        - Calls SubmitButton()
+        - If it returns false → form submission is stopped
+    -->
+    <form onsubmit="return SubmitButton()">
+
+        Name:
+        <input type="text" id="name">
+        <span id="nameError"></span>
+        <br><br>
+
+        Email:
+        <input type="email" id="email">
+        <span id="emailError"></span>
+        <br><br>
+
+        Password:
+        <input type="password" id="password">
+        <span id="passwordError"></span>
+        <br><br>
+
+        <input type="submit" value="Register" >
+        <span  id="successMsg"></span>
+
+    </form>
+    <script src="Exp4.js"></script>
+
+</body>
+</html>
