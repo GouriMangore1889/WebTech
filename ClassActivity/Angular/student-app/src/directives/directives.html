@@ -1,0 +1,15 @@
+<button (click)="show = !show">Toggle</button>
+
+@if(show){
+  <ul>
+    @for(s of students; track s.name){
+      <li [ngClass]="{'topper': s.marks > 80}"
+          [ngStyle]="{'color': s.marks > 80 ? 'green' : 'black'}">
+        {{ s.name }} - {{ s.marks }}
+      </li>
+    }
+  </ul>
+}
+@else{
+  <p>No students found</p>
+}

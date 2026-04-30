@@ -1,0 +1,19 @@
+middleware
+   -it is function that execute during request before sending the final respose
+   -they have access to request respond     
+
+activity=
+ 1)why we use middleware
+ 2)what are types of middleware
+ 3)what are benefites of middlewares
+ 4)where the middleware used in company level
+
+ 5)detailed study of query parameters with 3-4 real time execute
+ 6)where we use query para in company 
+ 
+ **express activity
+  1)egs project
+  2)what is static files
+  3)express router
+  4)complete express flow
+  

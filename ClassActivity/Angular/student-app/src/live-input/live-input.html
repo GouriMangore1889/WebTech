@@ -1,0 +1,8 @@
+<input [(ngModel)]="text" placeholder="Type here...">
+
+<p>{{ text }}</p>
+<p>Characters: {{ text.length }}</p>
+
+@if (text.length > 20) {
+  <p style="color:red;">Too long!</p>
+}

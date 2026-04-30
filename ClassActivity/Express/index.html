@@ -1,0 +1,9 @@
+<button onclick="getData()">Click Me</button>
+
+<script>
+function getData() {
+    fetch('/user')
+    .then(res => res.text())
+    .then(data => alert(data));
+}
+</script>

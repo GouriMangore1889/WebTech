@@ -1,0 +1,123 @@
+
+<!-- EVENT
+        -event is an action that happens in the browser 
+        -ex=> clicking a button 
+            moving mouse 
+            pressing key
+            submmitting form
+            loading page 
+        -js can detect these events and respond to them 
+        --types of event 
+                mouse event==> click,dblclick,mouseover,mouseout
+                keyboard event==>keydown and keyup
+                browser event==> load,resize and scroll
+        -html should contain structure and js should contain logic ,so mixing both is bad practice 
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Events Demo</title>
+
+    <style>
+        body {
+            background-color: #414141;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 15px;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            color: lightblue;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Amazing Images (Click to Remove)</h2>
+
+    <ul id="images">
+        <li>
+            <img id="photoshop"
+                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+                alt="Photoshop Logo"
+                onclick="alert('hi' )">
+        </li>
+
+        <li>
+            <img id="japan"
+                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+                alt="Mount Fuji">
+        </li>
+
+        <li>
+            <img id="Nature"
+                src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b"
+                alt="Nature Image">
+        </li>
+
+        <li>
+            <img id="photoman"
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+                alt="Photographer">
+        </li>
+
+        <li>
+            <img id="tiger"
+                src="https://images.unsplash.com/photo-1546182990-dffeafbe841d"
+                alt="Tiger"
+                onclick="alert('hi,i am tiger')">
+        </li>
+
+        <li>
+            <a href="https://google.com" id="google">Visit Google</a>
+        </li>
+    </ul>
+  </body>
+  <script>
+      document.getElementById('Nature').onclick= function (){
+        alert('Nature')
+      }                   //select element assign function to click event when click fun run
+                          //only one event can be assign can not handle multiple listener properly
+     document.getElementById('japan').addEventListener('click',function(e){
+        console.log(e);
+     },false)   //jquery,time,timestamp,default prevented ,target, source element,current target ,client X,client y,screanX,screanY,altKey,cltKey,Shift Key
+                //addEventListener==>it is a js method used to attach an event handler to an html elementso that specific function run when a perticular event occurs
+    //Event Propagation
+     document.getElementById('images').addEventListener('click',function(e){
+        console.log("clicking on ul");
+     },true)
+     document.getElementById('photoshop').addEventListener('click',function(e){
+        console.log("clicking on PS");
+     },false)            //event goes to inner element to parent and parent to document
+                         //false==>child to parent
+                         //true==>parent to child
+    document.getElementById('google').addEventListener('click',function(e){
+        console.log("google clicked");
+        e.preventDefault();  
+    })
+  </script>
+  </html>
